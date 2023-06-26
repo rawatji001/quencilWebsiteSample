@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #013574;
+}
+
+#navbar {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#navbar::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.925);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+#navbar ul {
+  display: flex;
+  margin-right: 6rem;
+  margin-left: auto;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.4rem;
+}
+#navbar ul li a {
+  font-family: "Nunito", sans-serif;
+  color: rgba(255, 255, 255, 0.822);
+  display: flex;
+  margin-top: 2.5rem;
+  padding: 0.4rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  cursor: pointer;
+}
+
+#logo {
+  margin: 0;
+}
+#logo img {
+  margin-left: 3.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 6rem;
+}
+#logo img:hover {
+  cursor: pointer;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 65rem;
+  padding: 0.3rem 0;
+  justify-content: center;
+  align-items: center;
+}
+#home ::before {
+  content: "";
+  background: url("img/bg1.jpg");
+  position: absolute;
+  top: 7.2rem;
+  left: 0;
+  height: 65.8rem;
+  width: 100%;
+  z-index: -1;
+}
+#home h1 {
+  font-size: 3.4rem;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  margin-top: 8rem;
+  margin-right: 21rem;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+#home .btn {
+  color: rgba(255, 255, 255, 0.8470588235);
+  background-color: #01408d;
+  border: 0.3rem solid #01408d;
+  font-size: 1.3rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  border-radius: 2.5rem;
+  padding: 0.8rem;
+  margin: 1rem auto auto 86rem;
+}
+#home .btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#home img {
+  height: 65rem;
+  width: 75rem;
+  display: flex;
+  position: absolute;
+  margin-right: 60rem;
+  margin-top: 6rem;
+}
+
+.intro {
+  background-color: #013574;
+  margin: 7rem 2.5rem;
+  border: 0.1rem dashed rgba(255, 255, 255, 0.445);
+  padding: 5rem;
+}
+.intro h1 {
+  font-size: 4rem;
+  color: white;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+}
+.intro img {
+  float: right;
+  height: 30rem;
+  width: 30rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+.intro img:hover {
+  cursor: pointer;
+}
+.intro p {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+.intro .button {
+  font-size: 1.5rem;
+  color: #01408d;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 2.5rem;
+}
+.intro .button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main {
+  background-color: #030d42;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.main h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Nunito", sans-serif;
+  position: absolute;
+  padding-top: 3rem;
+  padding-left: 7.5rem;
+}
+.main h4 {
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  padding-top: 7rem;
+  padding-left: 7.5rem;
+  font-weight: 100;
+}
+.main .container {
+  background-color: #030d42;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  justify-items: center;
+  padding-top: 2rem;
+  -webkit-padding-before: 17rem;
+          padding-block-start: 17rem;
+  -webkit-padding-start: 22rem;
+          padding-inline-start: 22rem;
+  -webkit-padding-end: 15rem;
+          padding-inline-end: 15rem;
+}
+.main .container .case img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 1rem;
+}
+.main .container .case img:hover {
+  cursor: pointer;
+}
+.main .container .case h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin: 0.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-right: 20rem;
+}
+.main .container .case p {
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-left: 3rem;
+  padding-right: 15rem;
+}
+.main .container2 {
+  background-color: #030d42;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  justify-items: center;
+  overflow: auto;
+  padding-top: 2rem;
+  -webkit-padding-start: 40rem;
+          padding-inline-start: 40rem;
+  -webkit-padding-end: 25rem;
+          padding-inline-end: 25rem;
+}
+.main .container2 .case img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 1rem;
+}
+.main .container2 .case img:hover {
+  cursor: pointer;
+}
+.main .container2 .case h3 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin: 0.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-right: 15rem;
+}
+.main .container2 .case p {
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  margin-left: 3rem;
+  padding-right: 13rem;
+}
+
+.join {
+  background-color: #013574;
+  margin: 6rem 2.5rem;
+  border: 0.1rem dashed rgba(255, 255, 255, 0.445);
+  padding: 3rem;
+  padding-right: 7rem;
+}
+.join h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 2rem;
+}
+.join img {
+  float: right;
+  height: 30rem;
+  width: 65rem;
+  padding-left: 3rem;
+}
+.join img:hover {
+  cursor: pointer;
+}
+.join p {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: white;
+  padding-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background-color: #030d42;
+  padding-bottom: 5rem;
+}
+.main h1 {
+  font-size: 3.3rem;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  padding: 5rem;
+  padding-left: 7rem;
+}
+.main .Alumni {
+  background-color: #030d42;
+  display: grid;
+  height: 15rem;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  justify-items: center;
+  -webkit-padding-start: 7rem;
+          padding-inline-start: 7rem;
+  -webkit-padding-end: 7rem;
+          padding-inline-end: 7rem;
+}
+.main .Alumni .companies {
+  background-color: white;
+  height: 12rem;
+  width: 17rem;
+  border-radius: 1.5rem;
+}
+.main .Alumni .companies:hover {
+  cursor: pointer;
+}
+.main .Alumni2 {
+  background-color: #030d42;
+  display: grid;
+  height: 15rem;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 2rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  justify-items: center;
+  overflow: auto;
+  padding-top: 2rem;
+  -webkit-padding-start: 16rem;
+          padding-inline-start: 16rem;
+  -webkit-padding-end: 14rem;
+          padding-inline-end: 14rem;
+}
+.main .Alumni2 .companies {
+  background-color: white;
+  height: 12rem;
+  width: 17rem;
+  border-radius: 1.5rem;
+}
+.main .Alumni2 .companies:hover {
+  cursor: pointer;
+}
+
+.placement {
+  background-color: #013574;
+  margin: 6rem 2.5rem;
+  border: 0.1rem dashed rgba(255, 255, 255, 0.445);
+  padding: 3rem;
+  padding-bottom: 6rem;
+  padding-top: 4rem;
+}
+.placement h1 {
+  font-size: 3.5rem;
+  color: white;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+}
+.placement p {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: white;
+  padding: 0.5rem;
+  padding-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  padding-right: 43rem;
+}
+.placement .button {
+  font-size: 1.5rem;
+  color: #01408d;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem 2.5rem;
+}
+.placement .button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
